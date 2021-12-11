@@ -42,7 +42,7 @@ class PizzaBot:
                     self.size_selected()
                     return 'Как вы будете платить?'
                 else:
-                    return 'Пожалуйста, выберете размер пиццы из предложенных вариантов'
+                    return 'Пожалуйста, выберете размер пиццы из предложенных вариантов (большую/маленькую)'
 
             case 'payment_method':
                 if choice in self.getAnswers():
