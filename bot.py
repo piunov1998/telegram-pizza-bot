@@ -7,11 +7,12 @@ class PizzaBot:
     что позволяет взаимодействовать с любыми платформами через разные интерфейсы
     """
     
-    states = ['idle', 'pizza_size', 'payment_method', 'confirm']
+    
 
     def __init__(self) -> None:
         self.pizza_size = ''
         self.payment_method = ''
+        self.states = ['idle', 'pizza_size', 'payment_method', 'confirm']
 
         self.machine = Machine(model=self, states=self.states, initial='idle')
 
